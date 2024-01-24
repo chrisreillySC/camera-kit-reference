@@ -16,7 +16,7 @@ import SCSDKCreativeKit
 class AppDelegate: UIResponder, UIApplicationDelegate, SnapchatDelegate {
 
     private enum Constants {
-        static let partnerGroupId = "REPLACE-THIS-WITH-YOUR-OWN-APP-SPECIFIC-VALUE"
+        static let partnerGroupId = "2f0c4f29-19c2-45aa-9191-f559ebd0217f"
     }
 
     var window: UIWindow?
