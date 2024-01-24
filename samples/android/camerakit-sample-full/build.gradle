@@ -13,15 +13,16 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         manifestPlaceholders = [
-            'cameraKitApiToken': cameraKitApiToken,
+                'cameraKitApiToken': cameraKitApiToken,
 
-            // Snap Kit parameters for the Lens Push To Device authentication via Login Kit:
-            'snapKitClientId': 'REPLACE-THIS-WITH-YOUR-OWN-APP-SPECIFIC-VALUE',
-            'snapKitRedirectUrl': 'REPLACE-THIS-WITH-YOUR-OWN-APP-SPECIFIC-VALUE',
-            'snapKitScheme': 'camerakit-support',
-            'snapKitHost': 'REPLACE-THIS-WITH-YOUR-OWN-APP-SPECIFIC-VALUE',
-            'snapKitPath': '/oauth2',
+                // Snap Kit parameters for the Lens Push To Device authentication via Login Kit:
+                'snapKitClientId': 'ae3f4267-5dbe-4ff7-86ff-56b60997349e',
+                'snapKitRedirectUrl': 'myapp://snap-kit/oauth2',
+                'snapKitScheme': 'myapp',
+                'snapKitHost': 'snap-kit',
+                'snapKitPath': '/oauth2',
         ]
+
 
         buildConfigField 'String', "LENS_GROUP_ID_TEST", "\"$cameraKitLensesGroupId\""
         buildConfigField 'String', "LENS_GROUP_ID_AR_CORE", "\"$cameraKitLensesGroupIdArCore\""
